@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -417,6 +418,9 @@ template {
 .borderTbl td, .borderTbl th {
     padding : 15px 0 15px 20px;
 }
+.borderTbl th {
+    width : 30%;
+}
 
 .grafList {
     display : -webkit-box;
@@ -462,7 +466,7 @@ template {
     width : 8%;
 }
 .grafList_piece.on {
-    background-color : #ffc787;
+    background-color : #ffad50;
 }
 
 .imgBorder {
@@ -493,9 +497,12 @@ template {
 .workList_item {
     border : 1px solid #ccc;
     display : block;
-    height : 169px;
+    height : 159px;
     position : relative;
     width : 280px;
+}
+.workList_item:hover .workList_txt {
+    opacity : 0;
 }
 
 .workList_img {
@@ -513,6 +520,8 @@ template {
     padding : 5px 10px;
     position : absolute;
     text-align : right;
+    -webkit-transition : .2s linear;
+    transition : .2s linear;
     width : 100%;
 }
 
@@ -569,9 +578,9 @@ template {
 }
 
 .designList {
-    -webkit-box-align : center;
-    -ms-flex-align : center;
-    align-items : center;
+    -webkit-box-align : start;
+    -ms-flex-align : start;
+    align-items : flex-start;
     display : -webkit-box;
     display : -ms-flexbox;
     display : flex;
@@ -582,6 +591,9 @@ template {
     width : 100%;
 }
 
+.designList_item {
+    margin : 0 auto;
+}
 .designList_item:not(:first-child) {
     margin-left : 30px;
 }
@@ -597,12 +609,15 @@ template {
 
 body, html {
     color : #333;
+    font-family : "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight : normal;
     font-size : 62.5%;
     height : 100%;
 }
 
 .topWrap {
-    background-color : #ccc;
+    background : url(../../img/bg_main.jpg) center center no-repeat;
+    background-size : cover;
     height : 100%;
     position : relative;
 }
@@ -617,7 +632,7 @@ body, html {
 }
 
 .topTitle {
-    font-family : futura, sans-serif;
+    font-family : futura-pt, futura, sans-serif;
     font-size : 3.0rem;
     font-style : normal;
     font-weight : 500;
@@ -626,7 +641,7 @@ body, html {
 }
 
 .header_ttl {
-    font-family : futura, sans-serif;
+    font-family : futura-pt, futura, sans-serif;
     font-size : 2.8rem;
     font-style : normal;
     font-weight : 500;
@@ -647,7 +662,7 @@ body, html {
 }
 
 .menuList_item {
-    font-family : futura, sans-serif;
+    font-family : futura-pt, futura, sans-serif;
     font-size : 1.8rem;
     font-style : normal;
     font-weight : 500;
@@ -664,7 +679,7 @@ body, html {
     transition : color .2s linear;
 }
 .menuList_item a:hover {
-    color : #ffc787;
+    color : #ffad50;
 }
 
 .copyright {
@@ -720,7 +735,7 @@ body, html {
 
 .h2 {
     color : #67b9ff;
-    font-family : futura, sans-serif;
+    font-family : futura-pt, futura, sans-serif;
     font-size : 3.2rem;
     font-style : normal;
     font-weight : 500;
@@ -729,7 +744,7 @@ body, html {
 }
 
 .h3 {
-    color : #ffc787;
+    color : #ffad50;
     font-size : 2.2rem;
     text-align : center;
 }
