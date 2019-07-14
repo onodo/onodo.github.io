@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{"3c84":function(e,t,n){"use strict";var c=n("e08c"),r=n.n(c);r.a},e08c:function(e,t,n){},f820:function(e,t,n){"use strict";n.r(t);var c=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},r=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"hello"},[n("p",[e._v("vue routerの練習で作ってたから")])])}],u={},s=u,a=(n("3c84"),n("2877")),i=Object(a["a"])(s,c,r,!1,null,"22129923",null);t["default"]=i.exports}}]);
-//# sourceMappingURL=about.9c52b4ac.js.map
